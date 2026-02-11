@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 450px;
+  width: 900px;
+  background-color: bisque;
+  margin: 0px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  background-color: #333;
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 8px;
+  vertical-align: top;
+  border: none;
+}
+
+.card:hover {
+  border: 2px solid crimson;
+  background-color: aliceblue;
+  color: #333;
+}
+
+.card h1 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 25px 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Tahoma, sans-serif;
+  text-align: justify;
+}

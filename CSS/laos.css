@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#container {
+  width: 500px;
+  height: 280px;
+  background-color: #002868;
+  margin: 120px auto;
+  position: relative;
+}
+
+.line1 {
+  width: 500px;
+  background-color: #ce1126;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+}
+
+.line2 {
+  width: 500px;
+  background-color: #ce1126;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.circle {
+  position: absolute;
+  top: 91px;
+  left: 200px;
+  height: 100px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

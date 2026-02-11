@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: wheat;
+}
+
+.base {
+  background-color: whitesmoke;
+  width: 600px;
+  height: 350px;
+  margin: 120px auto;
+  position: relative;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  background-color: red;
+  position: absolute;
+  top: 90px;
+  left: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

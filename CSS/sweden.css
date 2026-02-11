@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#base {
+  width: 500px;
+  height: 280px;
+  background-color: #005293;
+  margin: 120px auto;
+  position: relative;
+}
+
+.line1 {
+  position: absolute;
+  left: 130px;
+  width: 50px;
+  height: 280px;
+  background-color: #fecb00;
+}
+
+.line2 {
+  position: absolute;
+  top: 120px;
+  width: 500px;
+  height: 50px;
+  background-color: #fecb00;
+}

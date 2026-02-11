@@ -1,0 +1,39 @@
+body {
+  font-family: Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.sub {
+  background-color: seagreen;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.list {
+  list-style: disc;
+  margin: 10px 0;
+}
+
+.list li {
+  font-size: 16px;
+  padding: 2px 0;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  padding: 5px;
+}
