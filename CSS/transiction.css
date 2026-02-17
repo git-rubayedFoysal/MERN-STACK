@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+}
+
+.container {
+  width: 80vw;
+  height: 70vh;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: -10px 10px 15px #222;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 800px;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  transition: all 1s linear;
+  color: #333;
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: cadetblue;
+}
+
+.box2 {
+  background-color: seagreen;
+}
+.box3 {
+  background-color: coral;
+}
+
+.box4 {
+  background-color: dodgerblue;
+  animation-name: circleR;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+.obj {
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin: 5px;
+  transition: all 1s;
+}
+
+@keyframes circleR {
+  /* from {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(200px) rotate(-360deg);
+  } */
+
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box1:hover {
+  box-shadow: 3px 2px 17px 7px rgba(0, 0, 0, 0.77);
+  background-color: #005f5a;
+  /* transform: translate(-50px, 80px); */
+  transform: translate3d(100px, 100px, 160px);
+}
+.box2:hover {
+  box-shadow: 3px 2px 17px 7px rgba(0, 0, 0, 0.77);
+  background-color: #005f5a;
+  /* transform: scale(1.2); */
+  transform: scale3d(0.7, 0.7, 0.6);
+}
+.box3:hover {
+  box-shadow: 3px 2px 17px 7px rgba(0, 0, 0, 0.77);
+  background-color: #005f5a;
+  /* transform: rotate(90deg); */
+  transform: rotate3d(1, 1, 1, 360deg);
+}
+
+.box4:hover {
+  box-shadow: 3px 2px 17px 7px rgba(0, 0, 0, 0.77);
+  background-color: #005f5a;
+  /* transform: skew(-10deg); */
+}
+
+.box4:hover .obj {
+  background-color: red;
+}
