@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class & ELements</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    html {
+      font-size: 12px;
+    }
+
+    .container {
+      max-width: 67vw;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgb(222, 220, 219);
+      border: 2px solid #2a2a2a;
+      border-radius: 8px;
+      box-shadow: -1px 4px 15px #3e3e3e;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: all 0.3s linear;
+      color: seagreen;
+    }
+
+    h3::after {
+      content: "";
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      transition: all 0.3s linear;
+      font-family: cursive;
+
+      animation: ani 5s ease-in infinite 1s alternate;
+    }
+
+    @keyframes ani {
+      0% {
+        content: " Frontend Developer";
+        color: rgb(193, 7, 7);
+      }
+      25% {
+        content: " Backend Developer";
+        color: rgb(193, 7, 7);
+      }
+      50% {
+        content: " AI Engineer";
+        color: rgb(193, 7, 7);
+      }
+      75% {
+        content: " Problem Solver";
+        color: rgb(193, 7, 7);
+      }
+      100% {
+        content: " Programmer";
+        color: rgb(193, 7, 7);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h3>I am</h3>
+    </div>
+  </body>
+</html>
